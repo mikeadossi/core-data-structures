@@ -15,14 +15,34 @@ Tests and implementations for common data structures.
 To get started, after cloning down the project unto your machine, you'll need to install all the dependencies by running the following command.
 
 ```
-npm install
+$ npm install
 ```
 
-To run all unit test cases at once navigate to your main project directory and do the following.
+You may also need to run the babel compiler.
+
+```
+$ npm run build
+```
+
+To play with data structures in terminal do the following (linked list used as example).
+
+```
+$ node lib/linked_list.js
+$ node
+> const LL = require("./lib/linked_list").default
+> const myLL = new LL()
+> myLL.insert('yo')
+> myLL.insert('er')
+> myLL.showAll()
+```
+
+To run all unit test cases at once navigate to your main project directory and run the following.
 
 ```
 $ npm test
 ```
+
+
 
 
 ## Context
